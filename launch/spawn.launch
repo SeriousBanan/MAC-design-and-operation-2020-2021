@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
-    <param name="robot" command="cat '$(find MAC-design-and-operation)/urdf/rosbots.xacro'" />
+    <param name="robot_description" command="cat '$(find MAC-design-and-operation)/urdf/rosbots.xacro'" />
  
     <arg name="x" default="0"/>
     <arg name="y" default="0"/>
