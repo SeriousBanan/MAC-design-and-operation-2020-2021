@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <param name="robot_description_0" command="cat '$(find MAC-design-and-operation)/urdf/rosbots_0.xacro'" />
+ 
+    <node name="mybot_spawn_0" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description_0 -model rosbots_0 -x -4 -y 0 -z 0.5 -Y 0.5236" /> 
+    
+    <param name="robot_description_1" command="cat '$(find MAC-design-and-operation)/urdf/rosbots_1.xacro'" />
+ 
+    <node name="mybot_spawn_1" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description_1 -model rosbots_1 -x 4 -y 0 -z 0.5 -Y 2.6170" /> 
+          
+    <param name="robot_description_2" command="cat '$(find MAC-design-and-operation)/urdf/rosbots_2.xacro'" />
+ 
+ 
+    <node name="mybot_spawn_2" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description_2 -model rosbots_2 -x 0 -y 6.928 -z 0.5 -Y -1.571" /> 
+</launch>
